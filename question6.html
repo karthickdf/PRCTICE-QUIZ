@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;
+                    if(count == 0){
+                    window.location.href = "./question7.html"
+                }
+                }, 1000)
+
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+            
+            <p class="question-no">Question no:6</p>
+        </div>
+        <div class="question">
+            <p><b>What is the standard size of a football pitch?</b></p>
+        </div>
+        <div class="answer">
+            <form action="./question7.html">
+            <input type="radio" name="options" value="195 m x 110 m" id="option1">
+            <label for="option1">195 m x 110 m</label><br><br>
+            
+            <input type="radio" name="options" value="125 m x 85 m" id="option2">
+            <label for="option2">125 m x 85 m</label><br><br>
+            
+            <input type="radio" name="options" value="155 m x 95 m" id="option3">
+            <label for="option3">155 m x 95 m</label><br><br>
+            
+            <input type="radio" name="options" value="175 m x 105 m " id="option4">
+            <label for="option4">175 m x 105 m </label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

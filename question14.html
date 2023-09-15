@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;
+                    if(count == 0){
+                    window.location.href = "./question15.html"
+                }
+                }, 1000)
+
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+           
+            <p class="question-no">Question no: 14</p>
+        </div>
+        <div class="question">
+            <p><b>barcelona is famous for what playing style</b></p>
+        </div>
+        <div class="answer">
+            <form action="./question15.html">
+            <input type="radio" name="options" value="false 9" id="option1">
+            <label for="option1">false 9</label><br><br>
+            
+            <input type="radio" name="options" value="tiki taka" id="option2">
+            <label for="option2">Tiki taka</label><br><br>
+            
+            <input type="radio" name="options" value="holding" id="option3">
+            <label for="option3">holding</label><br><br>
+            
+            <input type="radio" name="options" value="front line" id="option4">
+            <label for="option4">front line</label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

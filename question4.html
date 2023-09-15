@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question5.html"
+                    }
+                }, 1000)
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+            
+            <p class="question-no"><b>Question no: 4</b></p>
+        </div>
+        <div class="question">
+            <p><b> Which of the following is not a football team in London</b></p>
+        </div>
+        <div class="answer">
+            <form action="./question5.html">
+            <input type="radio" name="options" value="Chelsea FC" id="option1">
+            <label for="option1">Chelsea FC</label><br><br>
+            
+            <input type="radio" name="options" value="Tottenham Hotspur FC" id="option2">
+            <label for="option2">Tottenham Hotspur FC</label><br><br>
+            
+            <input type="radio" name="options" value="Everton FC" id="option3">
+            <label for="option3">psg</label><br><br>
+            
+            <input type="radio" name="options" value="Arsenal FC" id="option4">
+            <label for="option4">Arsenal FC</label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;
+                    if(count == 0){
+                    window.location.href = "./question13.html"
+                }
+                }, 1000)
+
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+            
+            <p class="question-no">Question no: 12</p>
+        </div>
+        <div class="question">
+            <p><b>which of the following is a premiere league club?</b></p>
+        </div>
+        <div class="answer">
+            <form action="./question13.html">
+            <input type="radio" name="options" value="manchester city" id="option1">
+            <label for="option1">manchester city</label><br><br>
+            
+            <input type="radio" name="options" value="psg" id="option2">
+            <label for="option2">Psg</label><br><br>
+            
+            <input type="radio" name="options" value="barcelona" id="option3">
+            <label for="option3">barcelona</label><br><br>
+            
+            <input type="radio" name="options" value="real madrid" id="option4">
+            <label for="option4">real madrid</label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

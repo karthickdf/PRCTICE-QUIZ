@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;
+                    if(count == 0){
+                    window.location.href = "./question19.html"
+                }
+                }, 1000)
+
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+          
+            <p class="question-no">Question no: 18</p>
+        </div>
+        <div class="question">
+            <p><b>What is the match called played between Barcelona and Realmadrid? </b></p>
+        </div>
+        <div class="answer">
+            <form action="./question19.html">
+            <input type="radio" name="options" value="el classico" id="option1">
+            <label for="option1">el classico</label><br><br>
+            
+            <input type="radio" name="options" value="london derby" id="option2">
+            <label for="option2">london derby</label><br><br>
+            
+            <input type="radio" name="options" value="derby della madonniana" id="option3">
+            <label for="option3">derby della madonniana</label><br><br>
+            
+            <input type="radio" name="options" value="none" id="option4">
+            <label for="option4">none</label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

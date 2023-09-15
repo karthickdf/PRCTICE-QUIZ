@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice Quiz
+        </title>
+        <link rel="stylesheet" href="./work5.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;
+                    if(count == 0){
+                    window.location.href = "./question8.html"
+                }
+                }, 1000)
+
+            })
+        </script>
+    </head>
+    <body>
+        <center><div class="heading"><h1>Quiz</h1></div></center>
+        <br><br>
+        <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+        <br>    
+        <div class="container">
+        <div class="quiz-info">
+            
+            <p class="question-no">Question no: 7</p>
+        </div>
+        <div class="question">
+            <p><b>How many ballons d’or did Lionel Messi received? </b></p>
+        </div>
+        <div class="answer">
+            <form action="./question8.html">
+            <input type="radio" name="options" value="6" id="option1">
+            <label for="option1">6</label><br><br>
+            
+            <input type="radio" name="options" value="7" id="option2">
+            <label for="option2">7</label><br><br>
+            
+            <input type="radio" name="options" value="8" id="option3">
+            <label for="option3">8</label><br><br>
+            
+            <input type="radio" name="options" value="4"" id="option4">
+            <label for="option4">4</label><br><br><br>   
+
+            <input class="button" type="submit" value="submit">
+            <input class="button" type="reset" value="clear">
+            <br><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
